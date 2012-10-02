@@ -4,11 +4,18 @@
     android:layout_height="match_parent" >
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="@string/hello_world"
+        android:text="@string/awesome"
         tools:context=".MainActivity" />
+    
+    <Button 
+        android:id="@+id/btn_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click to display a dialog"
+        android:onClick="onClick"/>
 
 </RelativeLayout>
