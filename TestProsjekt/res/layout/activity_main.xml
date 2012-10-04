@@ -1,14 +1,47 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
-
+    android:layout_height="match_parent" 
+    android:orientation="horizontal" >
+    
+      <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/whatIsYourShape"
+        tools:context=".MainActivity" />
+     
+     
+    <RadioGroup 
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <RadioButton
+            android:id="@+id/radioLowIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioLowIntensity"
+            android:checked="false" />
+        
+        <RadioButton 
+            android:id="@+id/radioMediumIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioMediumIntensity"
+            android:checked="false" />
+        
+        <RadioButton 
+            android:id="@+id/radioHighIntensity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioHighIntensity" />     
+            
+            </RadioGroup>
+            
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/awesome"
+        android:text="@string/whatIsYourShape"
         tools:context=".MainActivity" />
     
     <Button 
@@ -18,4 +51,4 @@
         android:text="Click to display a dialog"
         android:onClick="onClick"/>
 
-</RelativeLayout>
+</LinearLayout>
